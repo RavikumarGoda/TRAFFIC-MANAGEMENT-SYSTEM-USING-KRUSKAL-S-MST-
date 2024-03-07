@@ -1,0 +1,18 @@
+TRAFFIC MANAGEMENT SYSTEM USING KRUSKAL’S MST 
+ALGORITHM ANALYSIS :
+1.	Start the program and read in the input graph. 
+2.	Sort the edges in ascending order of their weights. 
+3.	Initialize an empty set of edges for the MST. 
+4.	Initialize a disjoint set for the nodes. 
+5.	For each edge in the sorted list of edges: 
+6.	Find the root of each node in the edge using path compression 
+7.	If the nodes are in different sets, add the edge to the MST set and merge the two sets using union-by-rank. 
+8.	Check if the MST is complete by comparing the number of edges in the MST set to the number of nodes minus one. 
+9.	If the MST is complete, end the algorithm and return the MST set. 
+10.	If the MST is not complete, continue with the next edge. 
+11.	Delete edges that are unlikely to be part of the MST based on their weights. 
+12.	Check if the algorithm should end by comparing the number of edges in the MST set to the number of nodes minus one. 
+13.	If the algorithm should end, end the program. 
+14.	Otherwise, repeat steps 5 to 12 until the MST is complete. 
+15.	End the program. 
+
